@@ -11,7 +11,7 @@ public class ThongTinSanPham : ManHinh
     public Button button;
     public Button buttonSave;
     private int ID;
-    
+
     protected override void Start()
     {
         base.Start();
@@ -19,7 +19,7 @@ public class ThongTinSanPham : ManHinh
         buttonSave.onClick.AddListener(Save);
     }
 
-   
+
     public void SetInfo(SanPham product)
     {
         ID = product.ID;
@@ -35,13 +35,18 @@ public class ThongTinSanPham : ManHinh
 
         SetInfo(sanPham);
     }
-    
-    
+
+    /// <summary>
+    /// ////////////////////////
+    /// </summary>
     protected override void Back()
     {
         base.Back();
     }
 
+    /// <summary>
+    /// ////////////////////////
+    /// </summary>
     private void Save()
     {
         GameDataManager.Instance.TickSave(ID);
@@ -51,5 +56,4 @@ public class ThongTinSanPham : ManHinh
     {
         PurchasingManager.Instance.Show(ID);
     }
-
 }

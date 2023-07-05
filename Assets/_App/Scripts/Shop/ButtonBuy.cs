@@ -19,9 +19,14 @@ public class ButtonBuy : MonoBehaviour
 
     private void Choose()
     {
+        /////////////////
         PurchasingManager.Instance.OnPressDown(number);
     }
     
+    
+    /// <summary>
+    /// ///////////
+    /// </summary>
     void OnValidate()
     {
         TextMeshProUgui = GetComponentInChildren<TextMeshProUGUI>();

@@ -22,9 +22,11 @@ public class ButtonRegister : MonoBehaviour
 
         SetTextDay();
     }
+/// <summary>
+/// //////////
+/// </summary>
 
-
-
+//////////
     private void Choose()
     {
         RegisterManager.Instance.OnPressDown(number);

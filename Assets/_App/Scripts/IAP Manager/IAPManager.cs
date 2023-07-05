@@ -7,39 +7,22 @@ using UnityEngine.Purchasing;
 
 public class Key
 {
-    public const string PACK1 = "app5_pack1";
-    public const string PACK2 = "app5_pack2";
-    public const string PACK3 = "app5_pack3";
-    public const string PACK4 = "app5_pack4";
+    public const string PACK1 = "app9_pack1";
+    public const string PACK2 = "app9_pack2";
+    public const string PACK3 = "app9_pack3";
+    public const string PACK4 = "app9_pack4";
 
 
-    public const string PACK1_REGISTER = "register_app5_pack1";
-    public const string PACK2_REGISTER = "register_app5_pack2";
-    public const string PACK3_REGISTER = "register_app5_pack3";
-    public const string PACK4_REGISTER = "register_app5_pack4";
-    public const string PACK5_REGISTER = "register_app5_pack5";
+    public const string PACK1_REGISTER = "register_app9_pack1";
+    public const string PACK2_REGISTER = "register_app9_pack2";
+    public const string PACK3_REGISTER = "register_app9_pack3";
+    public const string PACK4_REGISTER = "register_app9_pack4";
+    public const string PACK5_REGISTER = "register_app9_pack5";
 }
 
 public class IAPManager : PersistentSingleton<IAPManager>, IStoreListener
 {
-    private static IStoreController storeController;
-    private static IExtensionProvider extensionProvider;
-    public static Action OnPurchaseSuccess;
-
-    private bool _isBuyFromShop;
-
-    private void Start()
-    {
-        InitIAP();
-    }
-
-    private void InitIAP()
-    {
-        if (storeController == null)
-        {
-            InitProduct();
-        }
-    }
+  
 
     private void InitProduct()
     {
@@ -62,6 +45,25 @@ public class IAPManager : PersistentSingleton<IAPManager>, IStoreListener
         UnityPurchasing.Initialize(this, builder);
     }
 
+
+    private static IStoreController storeController;
+    private static IExtensionProvider extensionProvider;
+    public static Action OnPurchaseSuccess;
+
+    private bool _isBuyFromShop;
+
+    private void Start()
+    {
+        InitIAP();
+    }
+
+    private void InitIAP()
+    {
+        if (storeController == null)
+        {
+            InitProduct();
+        }
+    }
     public void BuyProductID(string productId)
     {
         _isBuyFromShop = true;

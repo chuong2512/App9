@@ -11,7 +11,9 @@ public class QuanLyDonHang : Singleton<QuanLyDonHang>
     void Start()
     {
       Refresh();
-    }
+    }/// <summary>
+     /// ///////////
+     /// </summary>
 
     public void Refresh()
     {
@@ -25,7 +27,8 @@ public class QuanLyDonHang : Singleton<QuanLyDonHang>
         {
             var obj = Instantiate(sanPham, content);
 
-            obj.SetInfo(products[i]);
+          //////
+          obj.SetInfo(products[i]);
         }
     }
 }

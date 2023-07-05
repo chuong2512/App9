@@ -17,7 +17,9 @@ public class AllSanPham : ManHinh
             obj.SetInfo(products[i]);
         }
     }
-
+/// <summary>
+/// /////////////////////////////
+/// </summary>
     public SanPhamUI sanPham;
     public Transform content;
 }

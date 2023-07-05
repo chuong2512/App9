@@ -41,7 +41,7 @@ MonoBehaviour:
     anh: {fileID: 21300000, guid: 36718d5e1d40268408f44a46d008e25a, type: 3}
     anhHai: {fileID: 0}
     thongTin: 
-    gia: "500.000 \u0111"
+    gia: "600.000 \u0111"
     name: "B\xF3ng  chuy\u1EC1n \u0111\u1ED9ng l\u1EF1c "
   - ID: 5
     anh: {fileID: 21300000, guid: 63f99871edbc83d44bf9fd985153ec74, type: 3}
@@ -53,7 +53,7 @@ MonoBehaviour:
     anh: {fileID: 21300000, guid: 482671953dc8a934880efc570abbe65f, type: 3}
     anhHai: {fileID: 0}
     thongTin: 
-    gia: "500.000 \u0111"
+    gia: "100.000 \u0111"
     name: "B\xF3ng  chuy\u1EC1n \u0111\u1ED9ng l\u1EF1c "
   - ID: 7
     anh: {fileID: 21300000, guid: 63f99871edbc83d44bf9fd985153ec74, type: 3}
