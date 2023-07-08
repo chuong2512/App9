@@ -9,14 +9,6 @@ public class ButtonPage : MonoBehaviour
     public TextMeshProUGUI choos;
     public Color32 ChooseColor32, unChooseColor;
 
-    
-    public void UnSelect()
-    {
-        //image.sprite = unChooseIamge;
-        image.color = unChooseColor;
-        //choos.color = unChooseColor;
-    }
-    
     void OnValidate()
     {
         choos = GetComponentInChildren<TextMeshProUGUI>();
@@ -26,7 +18,13 @@ public class ButtonPage : MonoBehaviour
     {
         //image.sprite = chooseImage;
         image.color = ChooseColor32;
-        //choos.color = ChooseColor32;
+        if(choos) choos.color = ChooseColor32;
     }
-
+    
+    public void UnSelect()
+    {
+        //image.sprite = unChooseIamge;
+        image.color = unChooseColor;
+        if(choos) choos.color = unChooseColor;
+    }
 }

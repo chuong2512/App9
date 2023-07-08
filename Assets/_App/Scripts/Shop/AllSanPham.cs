@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class AllSanPham : ManHinh
 {
+    public SanPhamUI sanPham;
+    public Transform content;
+    
     protected override void Start()
     {
         base.Start();
@@ -17,9 +20,4 @@ public class AllSanPham : ManHinh
             obj.SetInfo(products[i]);
         }
     }
-/// <summary>
-/// /////////////////////////////
-/// </summary>
-    public SanPhamUI sanPham;
-    public Transform content;
 }

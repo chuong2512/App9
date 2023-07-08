@@ -4,5 +4,17 @@ using UnityEngine;
 
 public class BaiViet : MonoBehaviour
 {
-    
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }/// <summary>
+     /// ////////////////////
+     /// </summary>
+/////////////////////
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
 }

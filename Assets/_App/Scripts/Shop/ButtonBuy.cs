@@ -12,21 +12,6 @@ public class ButtonBuy : MonoBehaviour
     public TextMeshProUGUI TextMeshProUgui;
     public Button button;
 
-   
-    private void SetTextDay()
-    {
-    }
-
-    private void Choose()
-    {
-        /////////////////
-        PurchasingManager.Instance.OnPressDown(number);
-    }
-    
-    
-    /// <summary>
-    /// ///////////
-    /// </summary>
     void OnValidate()
     {
         TextMeshProUgui = GetComponentInChildren<TextMeshProUGUI>();
@@ -40,4 +25,12 @@ public class ButtonBuy : MonoBehaviour
         SetTextDay();
     }
 
+    private void SetTextDay()
+    {
+    }
+
+    private void Choose()
+    {
+        PurchasingManager.Instance.OnPressDown(number);
+    }
 }

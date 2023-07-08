@@ -31,7 +31,7 @@ public class ThongTinBaiViet : ManHinh
 
     public void ShowInfo(int id)
     {
-        var sanPham = GameDataManager.Instance.SanPhamSo.GetSanPhamWithID(id);
+        var sanPham = GameDataManager.Instance.BaiVietSO.GetSanPhamWithID(id);
 
         SetInfo(sanPham);
     }

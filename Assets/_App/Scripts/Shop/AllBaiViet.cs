@@ -5,6 +5,17 @@ using UnityEngine;
 public class AllBaiViet : ManHinh
 {
     public SanPhamUI sanPham;
+   
+    
+    
+    
+    
+    /// <summary>
+    /// /////////////////////
+    /// </summary>
+    
+    
+    
     public Transform content;
     
    protected override void Start()
